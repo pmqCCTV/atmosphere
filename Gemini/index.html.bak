@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沉浸式照片体验</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <main class="container">
+        <div class="image-section">
+            <img src="/storage/emulated/0/Gemini/mmexport1751468023777.jpg" alt="一个年轻男子戴着眼镜，穿着橙色T恤，坐在椅子上，低头看着手中的手机，背景是昏暗的房间和一台电视机。" class="main-image">
+            <div class="image-overlay-trigger" id="infoTrigger">
+                <button aria-label="查看更多关于这张照片的信息">i</button>
+            </div>
+        </div>
+
+        <section class="narrative-section">
+            <h1>捕捉瞬间：沉思与连接</h1>
+            <p>
+                这张照片捕捉了一个沉思的瞬间，光线从屏幕上投射到年轻男子的脸上，他全神贯注于手中的设备。
+                背景中的电视屏幕和昏暗的房间营造出一种独特的氛围，暗示着数字世界与现实环境的交织。
+                这是一个关于现代生活、专注以及在喧嚣中寻找片刻宁静的故事。
+            </p>
+            <p>
+                通过这张图片，我们旨在探索个人空间、技术在日常生活中扮演的角色，以及在数字连接时代中，
+                我们如何与周围的世界互动。每一个细节，从T恤上的图案到背景中模糊的纹理，都共同讲述着一个关于当代体验的视觉故事。
+            </p>
+        </section>
+    </main>
+
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>照片背后的故事</h2>
+            <p>
+                这张照片拍摄于一个傍晚，捕捉了光线与阴影的微妙互动。
+                人物的专注姿态和周围环境的细节共同营造出一种引人入胜的氛围。
+                我们希望通过这张图片，引发观众对现代生活节奏和个人沉思时刻的思考。
+            </p>
+            <p>
+                摄影师通过构图和光线运用，强调了人物与科技产品之间的联系，
+                同时也保留了背景中环境的神秘感，邀请观看者进行更深层次的探索。
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
