@@ -190,14 +190,27 @@ img {
     transition: color 0.2s;
 }
 
-.close-button:hover, .close-button:focus-visible {
+.close-button:hover {
     color: var(--accent-color);
-    outline: none;
+}
+
+.close-button:focus-visible {
+    color: var(--accent-color);
+    outline: 3px solid rgba(255,165,0,0.9);
+    outline-offset: 4px;
 }
 
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+/* 减动画偏好 */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
 }
 
 /* 响应式 */
