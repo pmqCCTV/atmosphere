@@ -56,10 +56,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 图片轮播
   const images = [
-                 "C:\Users\Administrator\Desktop\Gemini\f9b0231653e0c9a6388991fb517989b.jpg",
-	 "C:\Users\Administrator\Desktop\Gemini\e41559c39c1fff29e0b9df7cb88fc34.jpg",
-	 "C:\Users\Administrator\Desktop\Gemini\cd411503ae5f0d4d6ca79598c1b493a.jpg",
-	 "C:\Users\Administrator\Desktop\Gemini\99e86ea59d4a4febc9bca6ec37d15c7.jpg",
+                 "f9b0231653e0c9a6388991fb517989b.jpg",
+	 "e41559c39c1fff29e0b9df7cb88fc34.jpg",
+	 "cd411503ae5f0d4d6ca79598c1b493a.jpg",
+	 "99e86ea59d4a4febc9bca6ec37d15c7.jpg",
 
  ];
   let currentIndex = 0;
