@@ -54,12 +54,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // 主图像错误处理（移除内联 onerror，遵循 CSP）
+  const mainImage = document.querySelector('.main-image');
+  if (mainImage) {
+    mainImage.addEventListener('error', () => {
+      mainImage.src = 'placeholder.jpg';
+      mainImage.alt = '图片无法加载';
+    });
+  }
+
   // 图片轮播
   const images = [
                  "f9b0231653e0c9a6388991fb517989b.jpg",
-	 "e41559c39c1fff29e0b9df7cb88fc34.jpg",
-	 "cd411503ae5f0d4d6ca79598c1b493a.jpg",
-	 "99e86ea59d4a4febc9bca6ec37d15c7.jpg",
+  "e41559c39c1fff29e0b9df7cb88fc34.jpg",
+  "cd411503ae5f0d4d6ca79598c1b493a.jpg",
+  "99e86ea59d4a4febc9bca6ec37d15c7.jpg",
 
  ];
   let currentIndex = 0;
@@ -108,9 +117,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   renderImage();
-});
-    // 键盘导航提示：
-    // 使用 Tab 键在可聚焦元素之间前进 [9, 8]
-    // 使用 Shift + Tab 键在可聚焦元素之间后退 [9, 8]
-    // 使用 Enter 键或 Spacebar 键激活按钮和链接 [9, 8]
+
+  // 键盘导航提示：
+  // 使用 Tab 键在可聚焦元素之间前进 [9, 8]
+  // 使用 Shift + Tab 键在可聚焦元素之间后退 [9, 8]
+  // 使用 Enter 键或 Spacebar 键激活按钮和链接 [9, 8]
 });
